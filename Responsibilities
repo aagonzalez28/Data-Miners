@@ -1,0 +1,28 @@
+Design Lead - Adrian Gonzalez
+Coordinate team efforts for describing the scope, requirements and assumptions. Coordinate 
+team efforts for the creation of the Entity-Relationship diagram and its revisions throughout 
+the course.Integrate the work of the team into the Assignment 1 document and coordinate the
+presentation.Keep track of team journal before the submission of Assignment 1.Create the
+activities report for Assignment 1. 
+
+Implementation Lead - Andres Olivas
+Coordinate team efforts for the creation of the relational model, normalization process, 
+creation of database tables and queries using MySQL.Coordinate team efforts for the creation
+of views, triggers, stored procedures, and functions.Coordinate with the design lead to 
+guarantee the database implementation is consistent with the database design and its revisions
+.Integrate the work of the team into the Assignment 2 document.Keep track of team journal before 
+the submission of Assignment 2.Create the activities report for Assignment 2. 
+
+Interface Lead - Joseph Gutierrez
+Coordinate team efforts for the creation of the Graphical User Interface (GUI) to connect to the 
+database as well as the final presentation.Coordinate with the design lead and implementation lead 
+to guarantee the  GUI is consistent with the database design, implementation and their revisions.
+Integrate the work of the team into the Assignment 3 document.Keep track of team journal before the 
+submission of Assignment 3.Create the activities report for Assignment 3. 
+
+Reports Lead - Stephanie Loya
+Coordinate team efforts for the creation of the reports needed for the DB system. Coordinate with the 
+design lead, implementation lead, and GUI lead to guarantee the reports are consistent with the requirements, 
+the database design, implementation and their revisions. Integrate the work of the team into the final 
+document. Keep track of team journal before the submission of the final document and presentation. 
+Create the activities report for the final document.
