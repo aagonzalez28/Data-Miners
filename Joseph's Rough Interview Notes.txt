@@ -1,0 +1,52 @@
+Client: Claudia Casas
+
+Conference planning 
+Challenges HENAAC Conference Abstract review poster competition CAHSI sends students  HENAAC provides requirements but we follow 
+Need to be able to make changes and resubmit the abstracts. Need a way to submit, edit, and review. Need an automatic process to submit
+Works with multiple institutions
+Review abstracts and be able to submit to HENAAC
+Email from different students and mentors and make sure that they get feedback and organizes and classifies the 
+Abstract is page to half a page length files. Must be word file. May have word req.  has to be editable. Editing can happen through files or through word. Must maintain format. Everyone who would have their own account. Student, mentor, Reviewer. Automate the approval process. Word Count. 
+Submission to approval automated. Students receive corrections from the reviewer. Poster is also in the system. Poster must be reviewed as well. Mentor are notified but not editing.
+Review Statuses: 
+•	Approved – Ready for submission
+•	Approved- with Corrections
+•	Not Approved – Major Corrections (Can still submit) 
+•	Rejected ( Cannot Submit again)
+Must be time sensitive. Posters are in editable form, (powerpoint)
+Keep track of from where the submission came (to make sure it’s a CHASI school) 
+•	Majors
+•	Name
+•	Classification
+•	Title of abstract
+•	Who Is mentor(s) (Notify)
+•	Mentor email
+•	Ethnicity
+•	Gender
+•	Institution
+•	Student email 
+
+Account Types
+•	Student Account
+•	Reviewer Account
+•	Mentor Account
+•	Admin Account
+
+At least two reviews per student. Mentor and outside review.
+Reviewer and mentor Info
+•	Name
+•	email 
+•	institution 
+•	ethnicity 
+•	title 
+•	institution
+
+Call for papers System (about 40 abstracts this year up to 200)
+No limit to reviewers.
+ Want to be able to keep info from year to year
+Student submit, view, edit, submissions, cannot delete
+Reviewer request access to review, see what they need to review, see the ones they have done, get notifications on what is pending, can update
+Mentor can review and give notes
+Reports : all stuff  statuses and stuff
+Way to email everyone  
+Cahsi Colors  Cahsi Logos
