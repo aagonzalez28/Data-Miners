@@ -1,0 +1,207 @@
+CREATE TABLE Advices
+(
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT
+   ADmentor INT(6) NOT NULL,
+   ADstudent INT(6) NOT NULL,
+   PRIMARY KEY (Uuser_id),
+   KEY ADmentor (ADmentor),
+   KEY ADstudent (Adstudent)
+);
+
+CREATE TABLE User
+(
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT
+   Uemail VARCHAR(50) NOT NULL,
+   Upswd VARCHAR(50) NOT NULL,
+   Urole INT(1) NOT NULL,
+   PRIMARY KEY (Uuser_id),
+   KEY Urole (Urole),
+   KEY ADmentor (ADmentor)
+);
+
+CREATE TABLE Role
+(
+   Rrole_id INT(1) NOT NULL AUTO_INCREMENT
+   Rrole VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Rrole_id)
+);
+
+CREATE TABLE Men_Rev
+(
+   Ggender_id INT(6) NOT NULL AUTO_INCREMENT,
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT,
+   Eethnicity_id INT(6) NOT NULL AUTO_INCREMENT,
+   Ttitle_id INT(6) NOT NULL AUTO_INCREMENT,
+   Iinst_id INT(6) NOT NULL AUTO_INCREMENT,
+   MRgender INT(6) NOT NULL,
+   MRuser INT(6) NOT NULL,
+   MRethnicity INT(6) NOT NULL,
+   MRtitle INT(6) NOT NULL,
+   MRinst_name INT(6),
+   MRfirst VARCHAR(50) NOT NULL,
+   MRlast VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Ggender_id),
+   PRIMARY KEY (Uuser_id),
+   PRIMARY KEY (Eethnicity_id),
+   PRIMARY KEY (Ttitle_id),
+   PRIMARY KEY (Iinst_id),
+   KEY MRgender (MRgender),
+   KEY MRuser (MRuser),
+   KEY MRethnicity (MRethnicity),
+   KEY MRtitle (MRtitle),
+   KEY MRinst_name (MRinst_name)
+);
+
+CREATE TABLE Student
+(
+   Ggender_id INT(6) NOT NULL AUTO_INCREMENT,
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT,
+   Eethnicity_id INT(6) NOT NULL AUTO_INCREMENT,
+   Mmajor INT(6) NOT NULL AUTO_INCREMENT,
+   Cclass INT(6) NOT NULL AUTO_INCREMENT,
+   Iinst_id INT(6) NOT NULL AUTO_INCREMENT,
+   Sgender INT(6) NOT NULL,
+   Suser INT(6) NOT NULL,
+   Sethnicity INT(6) NOT NULL,
+   Smajor INT(6) NOT NULL,
+   Sclass INT(6) NOT NULL,
+   Sinst_name INT(6),
+   Sfirst VARCHAR(50) NOT NULL,
+   Slast VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Ggender_id),
+   PRIMARY KEY (Uuser_id),
+   PRIMARY KEY (Eethnicity_id),
+   PRIMARY KEY (Mmajor_id),
+   PRIMARY KEY (Cclass_id),
+   PRIMARY KEY (Iinst_id),
+   KEY Sgender (Sgender),
+   KEY Suser (Suser),
+   KEY Sethnicity (Sethnicity),
+   KEY Smajor (Smajor),
+   KEY Sclass (Sclass),
+   KEY Sinst_name (Sinst_name)
+);
+
+CREATE TABLE Gender
+(
+   Ggender_id INT(1) NOT NULL AUTO_INCREMENT
+   Ggender VARCHAR(15) NOT NULL,
+   PRIMARY KEY (Ggender_id)
+);
+
+CREATE TABLE Ethnicity
+(
+   Eethnicity_id INT(1) NOT NULL AUTO_INCREMENT
+   Eethnicity VARCHAR(20) NOT NULL,
+   PRIMARY KEY (Eethnicity_id)
+);
+
+CREATE TABLE Title
+(
+   Ttitle_id INT(1) NOT NULL AUTO_INCREMENT
+   Ttitle VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Ttitle_id)
+);
+
+CREATE TABLE Institution
+(
+   Iinst_id INT(1) NOT NULL AUTO_INCREMENT
+   Iinst VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Iinst_id)
+);
+
+CREATE TABLE Major
+(
+   Mmajor_id INT(1) NOT NULL AUTO_INCREMENT
+   Mmajor VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Mmajor_id)
+);
+
+CREATE TABLE Classification
+(
+   Cclass_id INT(1) NOT NULL AUTO_INCREMENT
+   Cclass VARCHAR(20) NOT NULL,
+   PRIMARY KEY (Cclass_id)
+);
+
+CREATE TABLE Poster
+(
+   Pfile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Ptitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   PRIMARY KEY (Pfile)
+   PRIMARY KEY (Ptitle)
+);
+
+CREATE TABLE Generates
+(
+   Afile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Atitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Pfile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Ptitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Gab_file INT(6) NOT NULL,
+   Gab_title INT(6) NOT NULL,
+   Gpo_file INT(6) NOT NULL,
+   Gpo_title INT(6) NOT NULL,
+   PRIMARY KEY (Gab_file),
+   PRIMARY KEY (Gab_title),
+   PRIMARY KEY (Gpo_file),
+   PRIMARY KEY (Gpo_title),
+   KEY Gab_file (Gab_file),
+   KEY Gab_title (Gab_title),
+   KEY Gab_file (Gpo_file),
+   KEY Gab_title (Gpo_title) 
+);
+
+CREATE TABLE Submits
+(
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT,
+   Afile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Atitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   SUemail VARCHAR(50) NOT NULL,
+   SUfile VARCHAR(50) NOT NULL,
+   SUtitle VARCHAR(50) NOT NULL,
+   PRIMARY KEY (Uuser_id),
+   PRIMARY KEY (Afile),
+   PRIMARY KEY (Atitle),
+   KEY SUemail (SUemail),
+   KEY SUfile (SUfile),
+   KEY SUtitle (SUtitle) 
+);
+
+CREATE TABLE Abstract
+(
+   Afile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Atitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Atime TIMESTAMP() NOT NULL,
+   Adate DATETIME() NOT NULL,
+   PRIMARY KEY (Afile),
+   PRIMARY KEY (Atitle)
+);
+
+CREATE TABLE Reviews
+(
+   Uuser_id INT(6) NOT NULL AUTO_INCREMENT,
+   Afile VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Atitle VARCHAR(50) NOT NULL AUTO_INCREMENT,
+   Sstatus_id INT(1) NOT NULL AUTO_INCREMENT,
+   RVreviewer INT(6) NOT NULL,
+   RVfile VARCHAR(50) NOT NULL, 
+   RVtitle VARCHAR(50) NOT NULL, 
+   RVstatus INT(1) NOT NULL, 
+   RVcomments VARCHAR(100),
+   PRIMARY KEY (Uuser_id),
+   PRIMARY KEY (Afile),
+   PRIMARY KEY (Atitle),
+   PRIMARY KEY (Sstatus_id),
+   KEY RVreviewer (RVreviewer),
+   KEY RVfile (RVfile), 
+   KEY RVtitle (RVtitle),
+   KEY RVstatus (RVstatus)
+);
+
+CREATE TABLE Status
+(
+   Sstatus_id INT(1) NOT NULL AUTO_INCREMENT
+   Sstatus VARCHAR(20) NOT NULL,
+   PRIMARY KEY (Sstatus_id)
+);
